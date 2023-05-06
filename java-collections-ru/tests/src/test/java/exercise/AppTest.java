@@ -19,7 +19,7 @@ class AppTest {
     @Test
     void takeTest2() {
         this.numbers = new ArrayList<>(Arrays.asList(7, 3, 10));
-        Assertions.assertEquals(Arrays.asList(7, 3, 8), App.take(numbers, 2));
+        Assertions.assertEquals(Arrays.asList(7, 3), App.take(numbers, 2));
     }
 
     @Test
@@ -30,6 +30,7 @@ class AppTest {
 
     @Test
     void takeEmptyListTest() {
+        this.numbers = new ArrayList<>();
         boolean isEmpty = App.take(this.numbers, 2).isEmpty();
         Assertions.assertTrue(isEmpty);
     }
