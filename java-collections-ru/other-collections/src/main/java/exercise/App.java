@@ -7,6 +7,5 @@ import java.util.TreeSet;
 
 // BEGIN
 class App {
-
 }
 //END
