@@ -1,12 +1,13 @@
 package exercise;
 
+// import java.util.ArrayList;
+// import java.util.List;
+
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.Path;
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 class AppTest {
@@ -16,7 +17,7 @@ class AppTest {
 
     private static Path getFixturePath(String fileName) {
         return Paths.get("src", "test", "resources", "fixtures", fileName)
-                .toAbsolutePath().normalize();
+        .toAbsolutePath().normalize();
     }
 
     private static String readFixture(String fileName) throws Exception {
